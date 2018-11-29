@@ -1,4 +1,4 @@
-var friends = require("../data/friends");
+const friends = require("../data/friends");
 
 module.exports = function(app) {
 	
@@ -7,7 +7,11 @@ module.exports = function(app) {
    });
 
    app.post("/api/friends", function(req,res) {
-    var newFriend = req.body;
+    res.json(friends)
+   });
+
+   app.post("/api/friends", function(req,res) {
+      var newFriend = req.body
    	console.log(req.body);
    });
 

@@ -1,6 +1,6 @@
 var newFriends = [
     {
-      name: "Parker",
+      name: "",
       photo: "",
       scores: []
     }
